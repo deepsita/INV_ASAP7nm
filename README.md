@@ -20,3 +20,7 @@ trolling each side of the ﬁn. The BSIM-CMG model includes a SPICE parameter na
 ![Screenshot from 2024-10-05 23-06-38](https://github.com/user-attachments/assets/dbe5d1fb-203a-4421-aa83-45456be808df)
 
 The manufacturing process for FinFET technologies is categorized into three stages: front-end-of-line (FEOL), middle-of-line (MOL), and back-end-of-line (BEOL). The FEOL stage focuses on creating wells and transistors, including key components like the active region, fins, gate, and diffusions. The BEOL stage involves establishing contacts through the via layer and the metallic layers, ranging from metal 1 (M1) to the top metal (M9), facilitating short connections and overall cell routing. The transition from FEOL to BEOL occurs in the MOL stage. For instance, the source-drain trench (SDT) layer connects the active area to the local interconnect source-drain (LISD) layer, which in turn links the source and drain terminals of transistors. The LISD layer is positioned above the SDT in the MOL stack, while the local interconnect gate (LIG) serves the gate terminal connections. The V0 layer is responsible for connecting the LIG and LISD to the BEOL layers.
+
+![INVLayout](https://github.com/user-attachments/assets/0150f7eb-7df8-4893-9a2b-5d2ab0a0b4d0)
+
+

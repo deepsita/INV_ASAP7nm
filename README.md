@@ -1,6 +1,7 @@
 # INV_ASAP7nm
 Inverter Layout with ASAP7nm Finfet Tech Lib.
-Aim is to examine the layout of a typical CMOS standard cell that includes both n-type and p-type finFETs. Many characteristics of traditional planar CMOS geometry are relevant to nonplanar finFET technology. A significant shift from traditional CMOS layout is that the transistor width (W) is no longer a variable in the design process.
+
+Many characteristics of traditional planar CMOS geometry are relevant to nonplanar finFET technology. A significant shift from traditional CMOS layout is that the transistor width (W) is no longer a variable in the design process.
 
 The nonplanar FinFET exhibits the same qualitative dependence of I_DS on V_GS and V_DS as the traditional planar MOSFET under gradual-channel conditions, with the planar width W replaced by the effective width W_eff of the nonplanar structure.
 
@@ -27,24 +28,34 @@ Open Klayout in edit mode
       klayout -e
 
 [Tools]-[Manage Technologies]
+
 Add a new technology by hovering to + in the bottom. 
+
 Add the .lyt, .lyp and drc folders to your .klayout directory. 
 
 Check if technology is selected and loaded properly by checking the T icon in the task ribbon of GUI. 
 You can select the ASAP7 once you create the technology. 
 
 Start a New layout from File Menu. 
+
 If you see the layoers are not properly loaded, You can go to File, Load Layer Properties and load .lyp. 
 
 Following are few rules that I referred from ASU reference.
 
 Gate width = 0.02um
+
 Gate pitch = 0.054um
+
 Fin width = 0.007um
+
 Fin pitch = 0.027um
+
 Cell height = 0.288um
+
 SDT width = 0.024um
+
 Minimum width M1, M2, M3 = 0.018um
+
 V0, V1, V2 = 0.018um x 0.018um
 
 Step 1: **Gate Drawing** - width of 0.02u and a height of 0.288u. Two dummy gates on each side. distance between gates 0.034um, pitch=0.054umm

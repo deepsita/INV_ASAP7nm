@@ -10,7 +10,7 @@ Although the I-V characteristics of the nonplanar FinFET show the same first-ord
 
 
 ![Screenshot from 2024-10-05 23-02-49](https://github.com/user-attachments/assets/5cd3da25-4d2c-4bf5-a5a8-d2107033ee37)
-<img src="Screenshot from 2024-10-05 23-02-49.jpg" alt="drawing" width="200"/>
+<img src="Screenshot from 2024-10-05 23-02-49.jpg" alt="![Screenshot from 2024-10-05 23-02-49](https://github.com/user-attachments/assets/5cd3da25-4d2c-4bf5-a5a8-d2107033ee37)" width="200"/>
 
 ![Screenshot from 2024-10-05 23-06-38](https://github.com/user-attachments/assets/dbe5d1fb-203a-4421-aa83-45456be808df)
 

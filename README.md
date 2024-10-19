@@ -41,11 +41,12 @@ Open Klayout in edit mode
 
 [Tools]-[Manage Technologies]
 
-Add a new technology by hovering to + in the bottom. 
+      Add a new technology by hovering to + in the bottom. 
 
-Add the .lyt, .lyp and drc folders to your .klayout directory. 
+      Add the .lyt, .lyp and drc folders to your .klayout directory. 
 
 Check if technology is selected and loaded properly by checking the T icon in the task ribbon of GUI. 
+
 You can select the ASAP7 once you create the technology. 
 
 Start a New layout from File Menu. 

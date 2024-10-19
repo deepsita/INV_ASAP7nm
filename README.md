@@ -52,23 +52,35 @@ Minimum width M1, M2, M3 = 0.018um
 V0, V1, V2 = 0.018um x 0.018um
 
 Step 1: **Gate Drawing** - width of 0.02u and a height of 0.288u. Two dummy gates on each side. distance between gates 0.034um, pitch=0.054umm
+
 Step 2: **Fins** -- width 0.007um heigh --0.019um total of 9 fins and distance between each fin is 0.02um and fin pitch is 0.027um.
+
 Step 3: **boundary layer**
+
 Step 4: **well drawing** 0.162um x 0.144um
+
 Step 5: **Gcut draawing** It is drawn at the center of dummy gates (0.054um x 0.044um) and also at the top and bo om (0.162um x 0.037um). Bottom GCut layer is 0.006um below the x-axis and at the top its 0.006 above the BOUNDARY layer.
+
 Step 6: **Active drawing** for pfet and nfet (0.07um x 0.081um). W p = W n = 0.081um. On left and right, distance between the dummy gate and Active layer is 0.009um. On top and bottom, distance between the GCut layer and Active layer is 0.005um.
+
 Step 7: Draw **SDT drawing** on Ac ve (0.024 um x 0.081 um). The distance between Gate and SDT is 0.005um. SDT is drawn on Ac ve layer wherever connec ons are to be made. If a source or drain has no connectons, then SDT layer should not be drawn.
+
 Step 8: Draw **LISD drawing** on top on SDT drawing, wherever VDD and GND connec ons are to be made, extend the LISD layer above the Active layer by 0.027um.
+
 Step 9 : Draw **LIG drawing** for connecting the LISD layer to VDD and GND (0.162um x 0.016um). One for gate connection (0.022um x 0.024um). The distance GCut layer and LIG layer is 0.014um LIG for gate connection: (0.022um x 0.024um). Distance from GCut (left and right): 0.016um, Distance from Active (top and bottom): 0.015um
+
 Step 10: Draw V0 drawing for the all gates, nets and VDD, GND place V0 on LIG layer. V0: 0.018um x 0.018um.
+
 Step 11: Draw M1 to connect the nets and for VDD and GND
+
 Step 12: Draw Pselect on top on pfet and Nselect on top of nfet (0.162um x 0.135um).
+
 Step 13: VDD and GND are brought to M2.Input and output pins are brought up to M3. For VDD and GND, draw M2 on top of M1, place V1 (0.018um x 0.018um) to connect M1 to M2
+
 Step 14: Input and output pins should be brought up to M3,Place M2 and V1 (0.018um x 0.018um) on top of M1.Now place M3 and V2 (0.018um x 0.018um) on top of M2.
 
 ![INVLayout](https://github.com/user-attachments/assets/0150f7eb-7df8-4893-9a2b-5d2ab0a0b4d0)
 
-The above picture is an overall view of the inverter layout. 
 
 References: 
 https://github.com/laurentc2/ASAP7_for_KLayout

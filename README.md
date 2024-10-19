@@ -9,11 +9,6 @@ The nonplanar FinFET exhibits the same qualitative dependence of I_DS on V_GS an
 Although the I-V characteristics of the nonplanar FinFET show the same first-order behavior as planar MOSFETs, it is inherently more resistant to short-channel effects (SCEs). However, if the corner radius is not carefully controlled during fabrication, a tri-gate FinFET may exhibit two distinct threshold voltages. One approach to prevent this issue is to add a thick dielectric layer, known as a hard mask, on top of the fin. In a hard-masked device, there are effectively two gates, electrically connected, with each controlling one side of the fin. The BSIM-CMG model includes a SPICE parameter called TMASK, which specifies the hard mask thickness. Setting TMASK to 0 indicates that there is no hard mask.
 
 
-![Screenshot from 2024-10-05 23-02-49](https://github.com/user-attachments/assets/5cd3da25-4d2c-4bf5-a5a8-d2107033ee37)
-<img src="Screenshot from 2024-10-05 23-02-49.jpg" alt="![Screenshot from 2024-10-05 23-02-49](https://github.com/user-attachments/assets/5cd3da25-4d2c-4bf5-a5a8-d2107033ee37)" width="200"/>
-
-![Screenshot from 2024-10-05 23-06-38](https://github.com/user-attachments/assets/dbe5d1fb-203a-4421-aa83-45456be808df)
-
 The manufacturing process of FinFET technology is divided into three key stages: front-end-of-line (FEOL), middle-of-line (MOL), and back-end-of-line (BEOL). The FEOL stage is dedicated to fabricating the foundational elements, such as wells and transistors, encompassing critical features like the active regions, fins, gates, and diffusion areas. The BEOL stage, on the other hand, focuses on creating electrical connections through a series of metal layers, starting from metal 1 (M1) up to the top metal layer (M9), facilitating both local and global routing within the cell. The MOL stage bridges the gap between FEOL and BEOL. For example, the source-drain trench (SDT) layer connects the active regions to the local interconnect source-drain (LISD) layer, which subsequently links the source and drain terminals of the transistors. The LISD is stacked above the SDT within the MOL structure, while the local interconnect gate (LIG) layer provides connections to the gate terminals. The V0 layer then links the LIG and LISD layers to the BEOL layers above, completing the routing infrastructure.
 
 File structure: 

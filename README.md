@@ -10,16 +10,28 @@ The nonplanar FinFET exhibits the same qualitative dependence of I_DS on V_GS an
 Although the I-V characteristics of the nonplanar FinFET show the same first-order behavior as planar MOSFETs, it is inherently more resistant to short-channel effects (SCEs). However, if the corner radius is not carefully controlled during fabrication, a tri-gate FinFET may exhibit two distinct threshold voltages. One approach to prevent this issue is to add a thick dielectric layer, known as a hard mask, on top of the fin. In a hard-masked device, there are effectively two gates, electrically connected, with each controlling one side of the fin. The BSIM-CMG model includes a SPICE parameter called TMASK, which specifies the hard mask thickness. Setting TMASK to 0 indicates that there is no hard mask.
 
 
-The manufacturing process of FinFET technology is divided into three key stages: front-end-of-line (FEOL), middle-of-line (MOL), and back-end-of-line (BEOL). The FEOL stage is dedicated to fabricating the foundational elements, such as wells and transistors, encompassing critical features like the active regions, fins, gates, and diffusion areas. The BEOL stage, on the other hand, focuses on creating electrical connections through a series of metal layers, starting from metal 1 (M1) up to the top metal layer (M9), facilitating both local and global routing within the cell. The MOL stage bridges the gap between FEOL and BEOL. For example, the source-drain trench (SDT) layer connects the active regions to the local interconnect source-drain (LISD) layer, which subsequently links the source and drain terminals of the transistors. The LISD is stacked above the SDT within the MOL structure, while the local interconnect gate (LIG) layer provides connections to the gate terminals. The V0 layer then links the LIG and LISD layers to the BEOL layers above, completing the routing infrastructure.
+The manufacturing process of FinFET technology is divided into three key stages: front-end-of-line (FEOL), middle-of-line (MOL), and back-end-of-line (BEOL). 
 
-File structure: 
+The FEOL stage is dedicated to fabricating the foundational elements, such as wells and transistors, encompassing critical features like the active regions, fins, gates, and diffusion areas.
+
+The BEOL stage, on the other hand, focuses on creating electrical connections through a series of metal layers, starting from metal 1 (M1) up to the top metal layer (M9), facilitating both local and global routing within the cell. 
+
+The MOL stage bridges the gap between FEOL and BEOL. For example, the source-drain trench (SDT) layer connects the active regions to the local interconnect source-drain (LISD) layer, which subsequently links the source and drain terminals of the transistors. 
+
+The LISD is stacked above the SDT within the MOL structure, while the local interconnect gate (LIG) layer provides connections to the gate terminals. 
+
+The V0 layer then links the LIG and LISD layers to the BEOL layers above, completing the routing infrastructure.
+
+## File structure: 
 
     ASAP7.lyt : technology and connections description
     ASAP7.lyp : layers color and shape description
     drc/drc_ASAP7.lydrc : DRC script
     finalinv.gds : Inverter layout 
 
-Setup Klayout with ASAP7: Install Klayout from [here](https://www.klayout.de/build.html). Make sure you install >0.28 version and have all the dependencies sorted.
+## Setup Klayout with ASAP7: 
+
+Install Klayout from [here](https://www.klayout.de/build.html). Make sure you install >0.28 version and have all the dependencies sorted.
 
       git clone https://github.com/deepsita/INV_ASAP7nm.git
 
@@ -39,6 +51,8 @@ You can select the ASAP7 once you create the technology.
 Start a New layout from File Menu. 
 
 If you see the layoers are not properly loaded, You can go to File, Load Layer Properties and load .lyp. 
+
+## Draw Inverter Layout
 
 Following are few rules that I referred from ASU reference.
 

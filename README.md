@@ -75,7 +75,7 @@ Step 13: VDD and GND are brought to M2.Input and output pins are brought up to M
 
 Step 14: Input and output pins should be brought up to M3,Place M2 and V1 (0.018um x 0.018um) on top of M1.Now place M3 and V2 (0.018um x 0.018um) on top of M2.
 
-![INVLayout](https://github.com/user-attachments/assets/0150f7eb-7df8-4893-9a2b-5d2ab0a0b4d0)
+![INVLayout](https://github.com/user-attachments/assets/e16666f9-c5d1-470a-ae33-97a61123fda8)
 
 
 References: 

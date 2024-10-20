@@ -1,5 +1,6 @@
-# INV_ASAP7nm
-Inverter Layout with ASAP7nm Finfet Tech Lib.
+# Layout_ASAP7nm
+
+## Inverter Layout with ASAP7nm Finfet Tech Lib.
 
 Many characteristics of traditional planar CMOS geometry are relevant to nonplanar finFET technology. A significant shift from traditional CMOS layout is that the transistor width (W) is no longer a variable in the design process.
 

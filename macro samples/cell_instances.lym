@@ -1,0 +1,17 @@
+from pya import *
+
+layout = Layout()
+layer1 = layout.layer(1,0)
+sub_cell = layout.create_cell("sub")
+box=DBox(-0.5, -1.0, 0.5, 1.0)
+sub_cell.shapes(layer1).insert(box)
+
+
+top_cell = layout.create_cell("Top")
+t = DTrans(1.0, 2.0)* DTrans.R90
+a= DVector(0, 3.0)
+b= DVector(4.0, 0.0)
+
+top_cell.insert(DCellInstArray(sub_Cell, t, a, b, 3, 2))
+
+layout.write("cell_instances.gds")

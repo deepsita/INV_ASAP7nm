@@ -28,6 +28,7 @@ The V0 layer then links the LIG and LISD layers to the BEOL layers above, comple
     ASAP7.lyp : layers color and shape description
     drc/drc_ASAP7.lydrc : DRC script
     finalinv.gds : Inverter layout 
+    macro samples : the two sample python macro scripts rect and create instance help as a starting point to drawing layouts with MDE
 
 ## Setup Klayout with ASAP7: 
 
